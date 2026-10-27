@@ -1,0 +1,44 @@
+{
+  "demo001": {
+    "id": "demo001",
+    "title": "Example AI product update",
+    "originalTitle": "Example AI product update",
+    "url": "https://example.com/news/product-update",
+    "aihotUrl": "",
+    "summary": "Synthetic example used to demonstrate the item schema.",
+    "source": "Example News",
+    "at": "2026-10-27T08:00:00.000Z",
+    "category": "product",
+    "score": 92,
+    "ref": "Example News:1",
+    "group": "Example News",
+    "duplicateOf": null,
+    "groups": [
+      "Example News"
+    ],
+    "discoveredAt": "2026-10-27T08:10:00.000Z",
+    "firstCollectedAt": "2026-10-27T08:10:00.000Z",
+    "lastCollectedAt": "2026-10-27T12:10:00.000Z"
+  },
+  "demo002": {
+    "id": "demo002",
+    "title": "Example open model release",
+    "originalTitle": "Example open model release",
+    "url": "https://example.com/news/open-model",
+    "aihotUrl": "",
+    "summary": "A second synthetic item for local query testing.",
+    "source": "Example Research",
+    "at": "2026-10-27T10:30:00.000Z",
+    "category": "model",
+    "score": 88,
+    "ref": "Example Research:1",
+    "group": "Example Research",
+    "duplicateOf": null,
+    "groups": [
+      "Example Research"
+    ],
+    "discoveredAt": "2026-10-27T10:40:00.000Z",
+    "firstCollectedAt": "2026-10-27T10:40:00.000Z",
+    "lastCollectedAt": "2026-10-27T12:10:00.000Z"
+  }
+}

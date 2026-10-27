@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "proxy": null,
+  "sources": [
+    {
+      "name": "X榜单_中文",
+      "kind": "网页",
+      "url": "https://xbangdan.com/posts/",
+      "proxy": true,
+      "filter": "AI",
+      "enabled": false,
+      "note": "中文区推文榜；部分网络环境需要代理，默认关闭"
+    },
+    {
+      "name": "X榜单_海外",
+      "kind": "网页",
+      "url": "https://xbangdan.com/global/",
+      "proxy": true,
+      "filter": "AI",
+      "enabled": false,
+      "note": "海外 AI 日榜与近 7 天榜合并去重；部分网络环境需要代理，默认关闭"
+    },
+    {
+      "name": "AIHOT_全部",
+      "kind": "接口",
+      "url": "https://aihot.news/api/v1/items?mode=all&window=24h&limit=100",
+      "proxy": false,
+      "api": {
+        "ua": "aihot-api/2.0.0 aihot-actor/00000000-0000-4000-8000-000000000000",
+        "paginate": true
+      },
+      "enabled": true,
+      "note": "过去 24 小时全部动态，自动翻页"
+    },
+    {
+      "name": "AIHOT_精选",
+      "kind": "接口",
+      "url": "https://aihot.news/api/v1/items?mode=selected&window=24h&limit=5",
+      "proxy": false,
+      "api": {
+        "ua": "aihot-api/2.0.0 aihot-actor/00000000-0000-4000-8000-000000000000"
+      },
+      "enabled": true,
+      "note": "过去 24 小时精选 5 条，与全部动态重复时标记"
+    },
+    {
+      "name": "量子位",
+      "kind": "RSS",
+      "url": "https://www.qbitai.com/feed",
+      "limit": 20,
+      "proxy": false,
+      "enabled": true,
+      "recent24h": true,
+      "note": "近 24 小时，按时间倒序取上限条数；不代表完整收录"
+    },
+    {
+      "name": "ITmedia AI+",
+      "kind": "RSS",
+      "url": "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml",
+      "limit": 20,
+      "proxy": false,
+      "enabled": true,
+      "recent24h": true,
+      "note": "近 24 小时，按时间倒序取上限条数；不代表完整收录"
+    },
+    {
+      "name": "TechCrunch",
+      "kind": "RSS",
+      "url": "https://techcrunch.com/feed/",
+      "limit": 20,
+      "proxy": false,
+      "enabled": true,
+      "recent24h": true,
+      "note": "近 24 小时，按时间倒序取上限条数；不代表完整收录"
+    },
+    {
+      "name": "IT之家",
+      "kind": "RSS",
+      "url": "https://www.ithome.com/rss/",
+      "limit": 30,
+      "proxy": false,
+      "enabled": true,
+      "recent24h": true,
+      "note": "近 24 小时，按时间倒序取上限条数；不代表完整收录"
+    },
+    {
+      "name": "爱范儿",
+      "kind": "RSS",
+      "url": "https://www.ifanr.com/feed",
+      "limit": 10,
+      "proxy": false,
+      "enabled": true,
+      "recent24h": true,
+      "note": "近 24 小时，按时间倒序取上限条数；不代表完整收录"
+    },
+    {
+      "name": "Readhub",
+      "kind": "接口",
+      "url": "https://api.readhub.cn/topic/list?page=1&size=20",
+      "limit": 20,
+      "proxy": false,
+      "enabled": true,
+      "recent24h": true,
+      "note": "近 24 小时，按时间倒序取上限条数；不代表完整收录"
+    }
+  ]
+}

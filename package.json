@@ -1,0 +1,36 @@
+{
+  "name": "ai-news-collector",
+  "version": "1.0.0",
+  "description": "Script-based AI news collection from RSS feeds, JSON APIs, and web pages.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "collect": "node src/collect.mjs pull",
+    "sources": "node src/collect.mjs list",
+    "query": "node src/query.mjs",
+    "check": "node --check src/collect.mjs && node --check src/browser.mjs && node --check src/query.mjs && node --check src/lib/parser.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "ai",
+    "news",
+    "rss",
+    "playwright",
+    "automation",
+    "news-aggregator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algiexu/ai-news-collector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/algiexu/ai-news-collector/issues"
+  },
+  "homepage": "https://github.com/algiexu/ai-news-collector#readme",
+  "dependencies": {
+    "playwright": "1.63.0"
+  }
+}

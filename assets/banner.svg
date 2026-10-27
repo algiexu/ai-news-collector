@@ -1,0 +1,47 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI News Collector</title>
+  <desc id="desc">Scripted feeds, APIs, web pages, normalization, and deduplication.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1510" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.55" stop-color="#0B2530"/>
+      <stop offset="1" stop-color="#10251D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="245" y1="170" x2="1320" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D5FF"/>
+      <stop offset="0.5" stop-color="#65F4C1"/>
+      <stop offset="1" stop-color="#D5F46B"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#C7FFF0" stroke-opacity="0.055"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="500" rx="32" fill="url(#bg)"/>
+  <rect width="1600" height="500" rx="32" fill="url(#grid)"/>
+  <circle cx="1310" cy="98" r="180" fill="#53F3C5" fill-opacity="0.08" filter="url(#glow)"/>
+  <circle cx="196" cy="425" r="150" fill="#31CFFF" fill-opacity="0.07" filter="url(#glow)"/>
+  <path d="M95 104H280" stroke="url(#accent)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M95 127H208" stroke="#D9FFF6" stroke-opacity="0.34" stroke-width="3" stroke-linecap="round"/>
+  <text x="96" y="236" fill="#F4FFFB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="78" font-weight="800" letter-spacing="-2">AI NEWS</text>
+  <text x="96" y="318" fill="url(#accent)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="78" font-weight="800" letter-spacing="-2">COLLECTOR</text>
+  <text x="100" y="371" fill="#B7D4CF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="500" letter-spacing="0.4">RSS · JSON APIs · web pages · normalization · deduplication</text>
+  <g transform="translate(980 128)">
+    <rect x="0" y="0" width="470" height="246" rx="26" fill="#07151B" stroke="#9EF6DD" stroke-opacity="0.22"/>
+    <circle cx="68" cy="72" r="24" fill="#34D5FF" fill-opacity="0.16" stroke="#34D5FF" stroke-width="3"/>
+    <path d="M54 72H82M68 58V86" stroke="#8FEAFF" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="235" cy="72" r="24" fill="#65F4C1" fill-opacity="0.14" stroke="#65F4C1" stroke-width="3"/>
+    <path d="M224 72L232 80L248 63" stroke="#A2FFE2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="402" cy="72" r="24" fill="#D5F46B" fill-opacity="0.13" stroke="#D5F46B" stroke-width="3"/>
+    <path d="M390 72H414M402 60V84" stroke="#EDFFAE" stroke-width="4" stroke-linecap="round"/>
+    <path d="M92 72H211M259 72H378" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="46" y="136" width="378" height="18" rx="9" fill="#CFFFF0" fill-opacity="0.09"/>
+    <rect x="46" y="174" width="300" height="18" rx="9" fill="#CFFFF0" fill-opacity="0.09"/>
+    <rect x="46" y="212" width="338" height="18" rx="9" fill="#CFFFF0" fill-opacity="0.09"/>
+    <rect x="46" y="136" width="245" height="18" rx="9" fill="url(#accent)" fill-opacity="0.82"/>
+    <rect x="46" y="174" width="188" height="18" rx="9" fill="url(#accent)" fill-opacity="0.52"/>
+    <rect x="46" y="212" width="280" height="18" rx="9" fill="url(#accent)" fill-opacity="0.68"/>
+  </g>
+</svg>

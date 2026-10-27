@@ -1,0 +1,63 @@
+name: Collect news
+
+on:
+  workflow_dispatch:
+  # Uncomment the schedule below to run this public workflow periodically.
+  # schedule:
+  #   - cron: "0 0,8,16 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Asia/Shanghai
+      PYTHONUTF8: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Validate
+        run: |
+          npm run check
+          npm test
+
+      - name: Collect
+        id: collect
+        continue-on-error: true
+        run: npm run collect
+
+      - name: Upload generated data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-data
+          path: data/
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Report incomplete collection
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo "One or more sources were blocked or failed. See the uploaded status.json."
+          exit 1
